@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pusepuh - Beranda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
     <header>
-       
-        <nav aria-label="Menu Ikon">
-        
-            <a href="index.html">
-                <img src="ikon-home.png" alt="Kembali ke Beranda Utama">
-            </a>
-           
-            <a href="explore.html">
-                <img src="ikon-explore.png" alt="Lihat Thread Campuran Terbaru">
-            </a>
-          
-            <a href="tema.html">
-                <img src="ikon-tema.png" alt="Pengaturan Tema Gelap atau Terang">
-            </a>
+        <nav class="menu-ikon">
+            <a href="home.html">Home</a>
+            <a href="buat-thread.html">New Thread</a>
+            <a href="tema.html">Mode</a>
         </nav>
-
-     
+        
         <h1>pusepuh</h1>
 
-     
         <form action="hasil-pencarian.html" method="GET">
             <label for="kolom-pencarian">Cari karya atau diskusi:</label>
             <input type="search" id="kolom-pencarian" name="q" placeholder="Ketik kata kunci di sini...">
             <button type="submit">Cari</button>
         </form>
 
-        
-        <nav aria-label="Navigasi Board">
+        <nav class="menu-board">
             <ul>
                 <li><a href="board-g.html">/g/ - Gambar</a></li>
                 <li><a href="board-k.html">/k/ - Krisar (Kritik & Saran)</a></li>
@@ -47,44 +33,37 @@
         </nav>
     </header>
 
-   
     <main>
-        <section>
-            <h2>Latest Threads</h2>
-            
-            
-            <article>
+        <h2>Latest Threads</h2>
+        <div class="daftar-karya">
+            <div class="kartu-thread">
                 <a href="detail-thread-1.html">
-                    <img src="image/opera.jpg" alt="" width="200">
+                    <img src="image/opera.jpg" alt="Pemandangan landscape" width="200">
                 </a>
-            </article>
+            </div>
 
-            
-            <article>
+            <div class="kartu-thread">
                 <a href="detail-thread-2.html">
-                    <img src="image/haruhi.jpg" alt="" width="200">
+                    <img src="image/haruhi.jpg" alt="Fanart karakter Haruhi" width="200">
                 </a>
-            </article>
+            </div>
 
-            
-            <article>
+            <div class="kartu-thread">
                 <a href="detail-thread-3.html">
-                    <img src="image/komik.jpg" alt="" width="200">
+                    <img src="image/komik.jpg" alt="Panel komik hitam putih" width="200">
                 </a>
-            </article>
+            </div>
             
-           
-            <article>
+            <div class="kartu-thread">
                 <a href="detail-thread-4.html">
                     <img src="image/kape.jpg" alt="Fanart karakter Genshin Impact bergaya cat air" width="200">
                 </a>
-            </article>
-        </section>
+            </div>
+        </div>
     </main>
 
-  
     <footer>
-    
+        <p>&copy; 2026 pusepuh - Media Sosial Artist Digital Terbesar di Indonesia</p>
     </footer>
 </body>
 </html>
