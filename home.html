@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>pusepuh - Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header & Navigasi -->
+    <header class="bg-blue-500 text-white p-4 text-center">
+        <nav class="flex justify-between items-center gap-4 m-4">
+            <a href="home.html" class="font-bold text-white text-lg">Home</a>
+            <a href="buat-thread.html" class="font-bold text-white text-lg">New Thread</a>
+        </nav>
+        
+        <!-- Judul Utama Diperbesar -->
+        <h1 class="text-4xl font-bold mt-2">pusepuh</h1>
+
+        <form action="#" method="GET" class="m-4">
+            <label class="text-xl font-semibold">Cari karya atau diskusi:</label>
+            <input type="search" placeholder="Ketik kata kunci di sini..." class="p-4 w-full border border-gray-300 rounded-lg mt-2 text-gray-800">
+            <button type="button" class="bg-white text-gray-800 font-bold py-2 px-6 rounded mt-2">Cari</button>
+        </form>
+
+        <!-- Seluruh Daftar Board -->
+        <nav class="m-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+            <a href="board.html" class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg font-bold text-sm text-center">/g/ - Gambar</a>
+            <a href="#" class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg font-bold text-sm text-center">/k/ - Krisar</a>
+            <a href="#" class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg font-bold text-sm text-center">/t/ - Tanya</a>
+            <a href="#" class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg font-bold text-sm text-center">/h/ - Hobi</a>
+            <a href="#" class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg font-bold text-sm text-center">/q/ - Feedback</a>
+            <a href="#" class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg font-bold text-sm text-center">/r/ - Random</a>
+        </nav>
+    </header>
+
+    <main class="p-4">
+        <h2 class="text-xl font-bold text-gray-800">Latest Threads</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-2">
+            <div class="bg-white shadow-md rounded-lg p-6 border border-gray-300 text-center">
+                <img src="image/opera.jpg" alt="Pemandangan" class="w-full rounded">
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 border border-gray-300 text-center">
+                <img src="image/haruhi.jpg" alt="Haruhi" class="w-full rounded">
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 border border-gray-300 text-center">
+                <img src="image/komik.jpg" alt="Komik" class="w-full rounded">
+            </div>
+            
+            <div class="bg-white shadow-md rounded-lg p-6 border border-gray-300 text-center">
+                <img src="image/kape.jpg" alt="Karakter" class="w-full rounded">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>pusepuh - Make a New Thread</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4 text-center">
+        <nav class="flex justify-between items-center gap-4 m-4">
+            <a href="home.html" class="font-bold text-white text-lg">Home</a>
+            <a href="board.html" class="font-bold text-white text-lg">Board List</a>
+        </nav>
+        <h1 class="text-4xl font-bold mt-2">Make a New Thread</h1>
+    </header>
+
+    <main class="p-4 w-full">
+        <div class="bg-white shadow-md rounded-lg p-6 border border-gray-300">
+            <form action="#" method="POST" enctype="multipart/form-data">
+                
+                <div class="mt-2">
+                    <label class="text-lg font-bold text-gray-800">Judul Karya / Topik:</label>
+                    <input type="text" class="w-full p-4 border border-gray-300 rounded-lg mt-2" placeholder="Ketik judulnya puh" required>
+                </div>
+                
+                <div class="mt-2">
+                    <label class="text-lg font-bold text-gray-800">Pilih Board (Kategori):</label>
+                    <select class="w-full p-4 border border-gray-300 rounded-lg mt-2" required>
+                        <option value="">-- Silakan Pilih Kategori --</option>
+                        <option value="g">/g/ - Gambar</option>
+                        <option value="k">/k/ - Krisar (Kritik & Saran)</option>
+                        <option value="t">/t/ - Tanya</option>
+                        <option value="h">/h/ - Hobi (Anime, Game)</option>
+                        <option value="q">/q/ - Site Feedback</option>
+                        <option value="r">/r/ - Random</option>
+                    </select>
+                </div>
+
+                <div class="mt-2">
+                    <label class="text-lg font-bold text-gray-800">Unggah Gambar (Opsional):</label>
+                    <input type="file" accept="image/*" class="w-full p-2 border border-gray-300 rounded-lg mt-2 bg-white">
+                </div>
+
+                <div class="mt-2">
+                    <label class="text-lg font-bold text-gray-800">Deskripsi / Caption:</label>
+                    <textarea class="w-full p-4 border border-gray-300 rounded-lg mt-2" rows="6" placeholder="Jadi ini mau posting apaan puh?" required></textarea>
+                </div>
+
+                <div class="flex gap-4 mt-4">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Unggah Thread</button>
+                    <button type="reset" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded">Batal</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
